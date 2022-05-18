@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="random_nimber" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rzu-MJ-bAO">
+                                <rect key="frame" x="8" y="298" width="398" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIx-7F-grz">
+                                        <rect key="frame" x="8" y="242" width="382" height="50"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="gEq-uj-yZu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="45"/>
+                                        <state key="normal" title="lucky"/>
+                                        <connections>
+                                            <action selector="lucky_btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LV4-Ws-JeK"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jai-4c-PuQ">
+                                        <rect key="frame" x="180" y="106" width="38" height="88.5"/>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="70"/>
+                                        <color key="textColor" systemColor="linkColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="32f-hr-Djv"/>
+                                    <constraint firstItem="fIx-7F-grz" firstAttribute="centerX" secondItem="rzu-MJ-bAO" secondAttribute="centerX" id="6P5-Zc-kXU"/>
+                                    <constraint firstItem="Jai-4c-PuQ" firstAttribute="centerY" secondItem="rzu-MJ-bAO" secondAttribute="centerY" id="FX5-I5-fVk"/>
+                                    <constraint firstAttribute="bottom" secondItem="fIx-7F-grz" secondAttribute="bottom" constant="8" id="Nne-TP-wh7"/>
+                                    <constraint firstAttribute="trailing" secondItem="fIx-7F-grz" secondAttribute="trailing" constant="8" id="VPh-9E-gRc"/>
+                                    <constraint firstItem="Jai-4c-PuQ" firstAttribute="centerX" secondItem="rzu-MJ-bAO" secondAttribute="centerX" id="dJJ-yS-AJk"/>
+                                    <constraint firstItem="fIx-7F-grz" firstAttribute="centerX" secondItem="rzu-MJ-bAO" secondAttribute="centerX" id="z04-1u-a3F"/>
+                                    <constraint firstItem="fIx-7F-grz" firstAttribute="leading" secondItem="rzu-MJ-bAO" secondAttribute="leading" constant="8" id="zUn-9P-EGk"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hi to all" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rd4-uA-9js">
+                                <rect key="frame" x="20" y="614" width="374" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rzu-MJ-bAO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0ps-bf-Cam"/>
+                            <constraint firstItem="Rd4-uA-9js" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2WC-HH-x8B"/>
+                            <constraint firstItem="rzu-MJ-bAO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fDh-SL-nRf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rd4-uA-9js" secondAttribute="trailing" constant="20" id="geM-75-AxS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rzu-MJ-bAO" secondAttribute="trailing" constant="8" id="pU7-Yb-I5D"/>
+                            <constraint firstItem="rzu-MJ-bAO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="qOI-5c-MBq"/>
+                            <constraint firstItem="Rd4-uA-9js" firstAttribute="top" secondItem="rzu-MJ-bAO" secondAttribute="bottom" constant="16" id="wlb-yg-ocF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="luck_lbl" destination="Rd4-uA-9js" id="Htc-Sp-dcl"/>
+                        <outlet property="lucky_btn" destination="fIx-7F-grz" id="AhM-HQ-6MY"/>
+                        <outlet property="num_lbl" destination="Jai-4c-PuQ" id="mYx-6q-HWY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88" y="62"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
